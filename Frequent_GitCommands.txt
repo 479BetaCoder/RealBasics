@@ -1,0 +1,25 @@
+**** Good practice ***********************************************
+git init --> to initialize a git repo in local directory (creates a hidden .git folder )
+To add your username and email for your repo before using git add
+git config --global user.name 'your name'
+git config --global user.email 'your email'
+*******************************LOCAL REPO*********************************************************************************************************
+git add * or git add ., git add *.java, git add*.extension --> to move all the files with extesnions as specified in your repo to staging (Index)
+git status --> to check the status of the current branch
+git rm --cached <file> --> to unstage
+git reset HEAD <file> --> to unstage
+git checkout --<file> --> to discard changes in the working directory
+git commit -m "commit message" --> used to commit the files which are in stage (Index)
+touch .gitignore --> this textfile will contain files (specified by user) which will not be tracked/involved in the git repo. (simply these are 'dont include' stuff)
+git branch branchName --> to create a branch 
+git checkout branchName --> to shift git control to that branch
+git merge branchName -m 'Msg' --> to merge your branch with another/master
+****************************Dealing with Remote repos************************************************************************************************
+git remote add AnyRemoteName 'anyRemoteLink(like git link)' --> To add remote repo (like githhub) to your local git.
+git push -u AnyRemoteName master --> To push your local git repo to remote (GitHub) (for the first time)
+git push --> Push to Remote repo (GitHub, Bitbucket) (not first time)
+git pull --> Pull latest from Remote repo
+git clone --> Clone (Copy of) repository into a new directory
+******************************************************************************************************************************************************
+rm <file> --> remove the file from the directory [not related to git]
+touch <file> --> add file to the directory [not related to git]
